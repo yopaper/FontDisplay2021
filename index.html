@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <style>
+        .fontText{
+            z-index: 500;
+            width: 80%;
+            height: 285px;
+            position: fixed;
+            background-color: #111111;
+            border-color: #999999;
+            border-width: 5px;
+            border-radius: 15px;
+            color:#EEEEEE;
+            resize: none;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            font-size: 25px;
+        }
+        .UIGroup{
+            z-index: 110;
+            padding: 10px;
+            margin: 5px;
+            width: 22%;
+            height: fit-content;
+            background-color: #555555;
+            border-radius: 10px;
+        }
+        .nameRect{
+            z-index: 120;
+            padding: 3px;
+            width: 80%;
+            height: fit-content;
+            color: #333333;
+            background-color: #DDDDDD;
+            border-radius: 6px;
+        }
+        .UIContainer{
+            position: relative;
+            top: 300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 100;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 90%;
+            height: fit-content;
+            padding: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #333333;
+            background-color: #DDDDDD;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>字型展示</title>
+    </head>
+    <body bgcolor=#333333>
+        <textarea id="demoText" class="fontText" ></textarea>
+        <div id="UIContainer" class="UIContainer">
+            <div style="width: 100%;"></div>
+        </div>
+        
+    </body>
+    <script src = "./dist/index.js" type="module"></script>
+</html>
